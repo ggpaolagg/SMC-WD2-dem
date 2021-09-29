@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
-    <style>
-        h1 {
-        	font-family: 'Bebas Neue', cursive;
-        	font-size: 80px;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="x-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+
+	<link href="main.css" rel="stylesheet">
+
+	<title>responsive navbar</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Oswald:wght@200&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+  <style>
+       h1 {
+       	    font-family: 'Kaisei Tokumin', serif;
+       }
+
+       h2 {
+       	    font-family: 'Playfair Display', serif;
+       }
+
+       p {     
+            font-family: 'Padauk', sans-serif;
+
+       }
+
+  	
+  </style>
 
 
-    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<section> 
+<body>    
 
-        <h1>Frank Shepard Fairey</h1>
-    </section>
-<p>This is a paragraph.</p>
+	<header>
+		<nav>
+			<a href="https://www.porschedowntownla.com/"><img src="logo.png" alt="MyLogo" class="nav-logo">
+			</a>
+
+            <label for="toggle-icon">
+                <igm src="icon.png"
+                alt="toggle button for mobile menu"
+                class="toggle-icon">
+            </label>
+
+            <input type="checkbox" 
+            id="toggleCheck">
+
+			<ul class="nav-links">
+			     <li><a href="#">Home</a></li>
+			     <li><a href="https://www.biography.com/business-figure/ferdinand-porsche">About</a></li>
+			     <li><a href="https://www.porsche.com/usa/">Blog</a></li>
+			     <li><a href="https://www.porsche.com/usa/dialogue/contactandinformation/contactus/">Contact</a></li>	
+			</ul>
+		</nav>
+    </header>
+
+
+	<main>
+		<img src="greycar.png" alt="floating car">
+
+        <div 
+            class="body-copy">
+             <h1>Porsche</h1>
+             <h2>Change is easy. Improvement is far more difficult. 
+             	 -Ferdinand Porsche</h2>
+			<p>Ferdinand Porsche founded luxury car in Stuttgart, Germany in 1931. One of the world's best known company for its powerful handling sports cars stills its legacy follows until now. Its performance still surprises with its 1964 frame, engine, colors, designs, and high reliability.
+			</p>
+
+
+		</div>
+	</main>
 
 </body>
 </html>
