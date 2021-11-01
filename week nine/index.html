@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Intro to Javascript</title>
+	<style>
+		#mainH {
+			background-color: lightgreen;
+		}
+
+		#tealPane {
+			background-color: lightskyblue;
+			height: 300px;
+		}
+	</style>
+</head>
+<body>
+     <h1 id="mainH">HTML DOM BUTTONS</h1>
+
+      <section>
+      	<button role="button" id="buttonone">Click Here</button>
+      	<div id="tealPane"></div>
+      	
+      	<button role="button" id="buttontwo">Select Here</button>
+      	
+      </section>
+
+
+
+
+      <script>
+      	    console.info("This is an example of JavaScript command.");
+            let answer = prompt("what's your favorite color?");
+
+            let mainHeader = document.getElementById("mainH")
+
+            let b1 = document.getElementById("buttonone");
+
+            let b2 = document.getElementById("buttontwo")
+
+            let pane = document.getElementById("tealPane");
+
+            let modifyb2 = function(){
+              pane.style.backgroundColor = "rbg (9, 98, 150)";
+              let notification = document.createElement("h7");
+              notification.innerText = "More buttons!!!!!!"
+              pane.appendChild(notification);
+      	    }
+
+      	    console.log( mainHeader);
+
+      	    mainHeader.style.backgroundColor = "blue";
+      	    mainHeader.innerText = mainHeader.innerText + "!"
+
+      	    b1.addEventListener("click", function(){
+              pane.style.backgroundColor = "rbg (11, 100, 100)";
+              let notification = document.createElement("h5");
+              notification.innerText = "Buttons!!!"
+              pane.appendChild(notification);
+      	    })
+
+      	    b2.addEventListener("click", modifyb2)
+      </script>
+
+
+
+
+</body>
+</html>
